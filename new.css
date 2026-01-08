@@ -1,0 +1,140 @@
+/* Add spacing around elements */
+.navbar-nav .nav-item {
+    margin-right: 50px; /* Adjust spacing between navbar items */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+}
+
+
+/* Logo container */
+.logo-container {
+    background-color: transparent; /* Ensures logo keeps its original design */
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo {
+    width: 100px; /* Adjust the logo size */
+    height: 75;
+    background-color: transparent;/* Add a distinct background to the logo if needed */
+    border-radius: 5px; /* Optional: Makes the background edges rounded */
+    padding: 5px; /* Optional: Add padding around the logo */
+}
+/* Position text over image */
+/* Make sure the image remains unaltered */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the image is displayed properly */
+}
+
+/* Position text over image */
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 10px;
+    bottom: 0;
+    display: flex;
+    justify-content: center; /* Aligns the content at the bottom */
+    align-items: flex-end; /* Vertically aligns the content at the bottom */
+    text-align: center;
+    pointer-events: none; /* Allows clicks to pass through */
+    padding-bottom: 20px; /* Adjust spacing from the bottom */
+}
+
+/* Only apply background to the text area */
+.overlay-text {
+    background: transparent; /* Semi-transparent background just behind the text */
+    padding: 20px; /* Adds space around the text */
+    border-radius: 10px; /* Rounds the corners for a smoother look */
+    color: white; /* Text color to contrast against the background */
+}
+
+/* Style text over image */
+.overlay-text h4 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; /* Example font */
+    margin: 0;
+}
+
+.overlay-text p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif; /* Example font */
+    margin-top: 5px;
+}
+.btn-outline-success{
+    background-color: blue;
+    
+}
+/* Style the container to use flex and center its content */
+.custom-container {
+    display: flex;
+    flex-direction: column; /* Stacks the items vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    background-color: blue; /* Set the entire container background to blue */
+    color: white; /* Makes the text white for better contrast */
+    height: 1opx; /* Optional: Makes the container take full viewport height */
+    text-align: center; /* Center text inside the container */
+    padding: 8px; /* Adds some padding around the content */
+}
+
+
+
+/* Style the heading */
+.custom-container h1 {
+    margin-top: 2px;
+    font-size: 36px; /* Adjust the size of the heading */
+    margin-bottom: 2px; /* Space between the heading and the paragraph */
+    font-family: 'Georgia', serif; /* Decorative font for the heading */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    text-transform: uppercase; /* Makes the heading uppercase */
+}
+
+/* Style the paragraph with decorative elements */
+.custom-container p {
+    font-size: 20px; /* Larger font size */
+    font-family: 'Verdana', sans-serif; /* Modern, clean font */
+    line-height: 1.8; /* Increase the line spacing */
+    max-width: 800px; /* Limit the width of the paragraph for better readability */
+    margin-top: 2px;
+    word-spacing: 5px; /* Adds spacing between words */
+    font-style: italic; /* Adds an italic style for emphasis */
+}
+
+/* Optional: Add some text-shadow to make the text stand out more */
+.custom-container p, .custom-container h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow effect */
+}
+img {
+    padding: 5px;
+  }
+  
+  .overlay-text {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  .styled-button {
+    background-color: transparent; /* Makes the background transparent */
+    /* Creates a white border around the button */
+    color: white; /* Change to your desired text color */
+    font-family: 'Poppins', sans-serif; /* Use your desired font */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 10px 20px; /* Adds padding for better clickability */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    transition: background-color 0.3s; /* Adds a transition effect for background color */
+  }
+  
+  .styled-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Optional: adds a semi-transparent white background on hover */
+  }
+  
+  
+
+

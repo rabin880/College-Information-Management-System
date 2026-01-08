@@ -1,0 +1,156 @@
+.header-right {
+    display: flex;                /* Flexbox for layout */
+    justify-content: flex-end;    /* Align items to the right */
+    align-items: center;          /* Vertically center the content */
+}
+
+.social-icons a {
+    margin-left: 10px;            /* Space between social icons */
+    color: #aaa; /* Set default icon color */
+    transition: color 0.2s ease; /* Smooth color transition */
+}
+.social-icons a:hover {
+    color: #e11f1f; /* Change icon color on hover */
+} 
+
+
+.dropdown {
+    margin-left: 20px;            /* Space between social icons and dropdown */
+    position: relative;           /* For the dropdown to position correctly */
+}
+
+.dropdown-content {
+    display: none;                /* Hide dropdown content initially */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.dropdown-content a {
+    color: #1e3263;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;               /* Show dropdown content on hover */
+}
+
+
+
+
+body {
+    background-color: #1e3263;
+    color: white;
+    font-size: 16px;
+}
+
+header {
+    background: #13203a;
+    padding: 10px 0;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    height: 60px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 100px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.intro, .victory, .infrastructure, .courses, .join {
+    text-align: center;
+    padding: 50px;
+    background-color: #2c4c7a;
+}
+
+.gallery, .infra-gallery, .course-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery img, .infra-gallery img, .course-gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #0f1e35;
+}
+
+.footer-buttons {
+    margin-top: 20px;
+}
+
+.footer-buttons .btn {
+    background-color: #3e5e93;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.footer-buttons .btn:hover {
+    background-color: #2b4374;
+}
+
+
+
+
+
+

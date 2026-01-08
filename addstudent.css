@@ -1,0 +1,265 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+/* Header */
+header {
+    background-color: rgb(16, 3, 65);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px #1514461a;
+    border: 2px solid #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    height: 60px;
+}
+
+#logout-btn {
+    background-color: #f04e4e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #283D75;
+    padding: 10px;
+    position: fixed;
+    top: 60px; /* Aligns under the fixed header */
+    bottom: 0;
+    overflow-y: auto;
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+    border-right: 2px solid #000; /* Add subtle border for separation */
+}
+
+/* Hide scrollbar on WebKit browsers (Chrome, Safari) */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Sidebar links */
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 12px; /* Reduce this value to decrease the space between items */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 12px 8px; /* Adjust the padding (vertical horizontal) between menu items */
+    display: block;  /* Make the link fill the entire area, improving clickability */
+    border-radius: 4px; /* Optional: Adds rounded corners to the menu items */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+
+.main-content {
+    margin-top: 60px; /* Space for fixed header */
+    margin-left: 140px; /* Remove margin-left to eliminate the gap */
+    width: calc(100% - 250px); /* Occupy remaining space after sidebar */
+    padding: 20px;
+    height: calc(100vh - 60px); /* Full height minus header */
+    background-color: lightgrey; /* Match body background */
+    overflow-y: auto; /* Scrollbars on vertical content */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+}
+
+
+
+.main-content::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+
+
+/* Card Section */
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid #000;  
+    cursor: pointer;
+    padding: 15px;
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #003366;
+    font-size: 18px;
+}
+
+.card:hover {
+    background-color: #f0f0f0;  
+}
+
+button.card {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Content */
+.content {
+    padding: 40px;
+    background-color: #f4f5f8;
+    min-height: 100vh;
+    color: black;
+}
+
+ 
+ /* Table container for responsiveness */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    margin: 15px auto; /* Center the table container */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Remove unnecessary margins */
+table {
+    margin-left: 0;
+}
+
+table:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Header styling */
+th {
+    padding: 10px;
+    text-align: left;
+    background-color: #003366; /* Dark blue */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #e0e0e0;
+    font-size:10px;
+}
+
+/* Cell styling */
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    color: #333;
+    font-size:10px;
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+    background-color: #f4f6f8;
+    transition: background-color 0.3s;
+}
+
+/* Buttons */
+.edit-button, .delete-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-button {
+    background-color: #3b82f6;
+    color: white;
+    margin-right: 8px;
+}
+
+.delete-button {
+    background-color: #ef4444;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.delete-button:hover {
+    background-color: #dc2626;
+    transform: translateY(-2px);
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9em; /* Reduce font size */
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
